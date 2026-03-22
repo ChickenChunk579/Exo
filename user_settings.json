@@ -1,0 +1,54 @@
+{
+    "appearance": {
+        "wallcolors": {
+            "color_scheme": "content",
+            "dark_mode": true,
+            "auto_dark": {}
+        }
+    },
+    "interface": {
+        "modules": {
+            "location": {},
+            "visibility": {},
+            "bar_id": {},
+            "options": {
+                "workspaces_style": "numbers",
+                "fixed_workspaces_amount": 20,
+                "military_time": true,
+                "day_month_swapped": false
+            }
+        },
+        "bar": {
+            "side": "bottom",
+            "density": 3,
+            "floating": false,
+            "vertical": false,
+            "separation": false,
+            "centered": false,
+            "bar_background": true,
+            "module_backgrounds": true
+        },
+        "bar2": {
+            "enabled": false,
+            "floating": false,
+            "side": "top",
+            "vertical": false,
+            "module_backgrounds": true
+        },
+        "notifications": {},
+        "launcher": {},
+        "misc": {
+            "screen_corners": "always",
+            "shell_corners": true
+        }
+    },
+    "services": {
+        "recorder": {},
+        "osd": {
+            "anchor": [
+                "bottom"
+            ],
+            "vertical": false
+        }
+    }
+}

@@ -29,10 +29,15 @@ css_manager.apply_css(
     CssInfoPath(
         name="main",
         path=os.path.expanduser("~/.config/ignis/styles/main.scss"),
-        compiler_function=lambda path: utils.sass_compile(path=path),
+        compiler_function=lambda path: utils.sass_compile(
+            path=path,
+            # Point this to the root config dir so ../colors works
+            extra_args=["--load-path=" + os.path.expanduser("~/.config/ignis/")]
+        ),
         priority="user",
     )
 )
+
 css_manager.apply_css(
     CssInfoPath(
         name="colors",
